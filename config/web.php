@@ -39,15 +39,22 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
         
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+
             'rules' => [
+    
+            'about' => 'site/about',
+            'contact' => 'site/contact',
+            'blog' => 'site/blog',
+            'login' => 'site/login'
+            
             ],
         ],
-        */
+        
     ],
+
     'params' => $params,
 ];
 
@@ -59,6 +66,7 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [

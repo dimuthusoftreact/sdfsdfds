@@ -13,6 +13,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         This is the Blog page. You may modify the following file to customize its content:
+
+        
     </p>
 
     <h1><?=$name;?></h1>
